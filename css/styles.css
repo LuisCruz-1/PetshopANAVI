@@ -1,0 +1,273 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+}
+#barraSuperior{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 75px;
+    padding-right: 65px;
+    background-color: #222222;
+    color: white;
+    font-size: 14px;
+}
+#barraSuperior span{
+    margin-left: 15px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: #f0a83e;
+    height: 60px;
+}
+#navmenu {
+    width: 100%;
+    text-align: right;
+    color: white;
+}
+#navmenu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+#navmenu li img{
+    width: 10px;
+    padding-right: 5px;
+    filter: invert(1);
+  }
+#logo{
+    width: 50%;
+    height: 50%;
+    display: flex;
+  }
+#seccionBanner{
+    background-size: cover;
+    /*C:/Users/Intel/Documents/Digital House/Front End I/Petshop/images/fondo.png*/
+    background-image:url("/images/fondo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #9fdbb7;
+    height: 550px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+#inSeccionBannerRight{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+}
+#inSeccionBannerRight #fondo{
+    font-size: 35px;
+    font-weight: 400;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#inSeccionBannerRight #leyenda{
+    color: black;
+    font-size: 20px ;
+    padding: 10px;
+}
+#inSeccionBannerRight button{
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    border: none;
+    background-color: #f0a83e;
+    color: white;
+    font-weight: 500;
+    font-size: 100%;
+}
+#inSeccionBannerRight button:hover{
+    padding: 10px;
+    border-radius: 0px;
+    width: 140px;
+}
+#tituloSeccion{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h2{
+    font-size: xx-large;
+}
+#tituloSeccion img{
+    width: 5%;    
+}
+.galeria{
+    display: flex;
+    padding-left: 90px;
+    padding-right: 90px;
+    justify-content: center;
+}
+.galeria .item{
+text-align: center;
+background-color: #fbf7ea;
+margin: 15px;
+padding: 10px;
+border-radius: 10px;
+height: 375px;
+width: 25%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.galeria .item h3{
+    margin: 0px;
+    }
+.item img{
+    width: 30%;
+}
+.item span{
+    color: #f0a83e;
+    font-weight: 500;
+}
+
+#piePagina{
+    display: flex;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c2313;
+}
+#logoPie{
+    width: 50%;
+    align-self: center;
+    text-align: right;
+}
+#logoPie img{
+    width: 30%;
+}
+#datosContacto{
+    width: 50%;
+}
+.itemContacto{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    color: white;
+}
+.itemContacto h3{
+ margin: 0px;
+}
+.itemContacto span{
+    font-size: 60%;
+    vertical-align: top;
+   }
+#fontoIconItem img{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+#fontoIconItem{
+    background-color: #8a8787;
+    padding: 10px;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    border: 4px solid #786960;
+}
+#barraInferior{
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 75px;
+    padding-right: 65px;
+    background-color: #222222;
+    color: white;
+    font-size: 11px;
+}
+@media (max-width: 768px) {
+    #barraSuperior {
+      display: none;
+    }
+    #seccionBanner{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 20px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://cdn.pixabay.com/photo/2020/06/08/22/50/dog-5276317_1280.png");
+    }
+    #inSeccionBannerRight{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: end;
+    }
+    #inSeccionBannerRight #fondo{
+        font-size: 25px;
+    }
+    #inSeccionBannerRight button{
+        align-self: end;
+    }
+.titulo h2{
+    font-size: xx-large;
+}
+#tituloSeccion img{
+    width: 15%;    
+}
+.galeria{
+    display: flex;
+    flex-direction: column;
+}
+.galeria .item{
+    width: 100%;
+    padding: 0px;
+    margin: 5px;
+    }
+.item img{
+    width: 40%;
+}
+#navmenu{
+    display: none;
+}
+#suscribirForm{
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+#suscribirForm input[type=email]{
+    width: 100%;
+}
+#franjaSuscribete{
+    flex-direction: column;
+}
+#piePagina{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5px;
+    margin: 0px;
+}
+#logoPie{
+    text-align: center;
+    padding: 10px;
+}
+#logoPie img{
+    width: 100%;
+}
+}
